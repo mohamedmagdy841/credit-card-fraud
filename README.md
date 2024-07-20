@@ -1,7 +1,7 @@
 # ETL Pipeline for Credit Card Fraud Detection Using Airflow
 
 ### Description
-This project implements an automated ETL pipeline for credit card fraud detection using Python and Apache Airflow. It extracts data from S3, cleans and transforms it, and loads it into SQLite for analysis. Apache Airflow manages the workflow, and AWS S3 provides secure, scalable storage.
+This project implements an automated ETL pipeline for credit card fraud detection using Python and Apache Airflow. It extracts data from S3, cleans and transforms it, and loads it into PostgreSQL for analysis. Apache Airflow manages the workflow, and AWS S3 provides secure, scalable storage.
 
 
 ### Dataset Summary:  
@@ -19,10 +19,8 @@ The `credit_card_fraud` dataset consists of 20 diverse metrics and 8000 transact
 ### Architecture:
 
 <p align="center">
-  <img width="700" src="https://github.com/user-attachments/assets/d7051a3b-9763-4f5b-b824-b2f9e13f8ef2">
+  <img width="700" src="https://github.com/user-attachments/assets/427c3671-dec2-48d2-b0a8-4867922c6009">
 </p>
-
-Here's how you can outline the steps in your README file:
 
 ### Project Overview
 
@@ -34,10 +32,10 @@ Here's how you can outline the steps in your README file:
    - Save the cleaned data into a "transformed" folder in the S3 bucket.
 
 3. **Load Data**
-   - Load the transformed data from S3 into an SQLite database for further analysis.
+   - Load the transformed data from S3 into an PostgreSQL database for further analysis.
 
 4. **Analyze Data**
-   - Use SQL queries on the SQLite database to perform analysis and derive insights.
+   - Use SQL queries on the PostgreSQL database to perform analysis and derive insights.
 
 ## S3 Bucket
 <p align="center">
